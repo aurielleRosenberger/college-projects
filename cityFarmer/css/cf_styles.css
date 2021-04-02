@@ -1,0 +1,65 @@
+
+/* Auri Rosenberger | 02, April 2021 | Assessment, Project 2 City Farmer */
+
+@font-face {
+	font-family: 'boldquicksand';
+	src: url('../fonts/quicksand-bold-webfont.woff2') format('woff2'), 
+	url('../fonts/quicksand-bold-webfont.woff') format('woff');
+}
+
+#outerwrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+body {
+	background-color: #B8D1EB;
+	color: #000000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.floatleft { 
+	float: left;
+	margin-right: 3%;
+}
+
+.floatright {
+	float: right;
+	margin-left: 3%;
+}
+
+nav > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Righteous', cursive;
+	font-size: 64px;
+}
+
+h2 {
+	font-family: 'boldquicksand', Georgia, serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+main > ul {
+	list-style-image: url(../images/resizedtomato.png);
+}
+
+main {
+	background-color: #C5A98B;
+	padding: 10px;
+	clear: both;
+}
+
+footer {
+	font-size: .75em;
+	text-align: center;
+	background-color: #477846;
+	padding: 10px 0px 10px 0px;
+	clear: both;
+}
