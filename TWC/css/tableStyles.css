@@ -1,0 +1,54 @@
+/* Style Sheet If You Build It (table), They Will Come */
+/* Name: Auri Rosenberger */
+
+/* Gradient target HTML body element tag */
+
+body {
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    padding: 1em;
+}
+
+/* css target tableStyle class in HTML */
+
+.tableStyle, .tableStyleAgain {
+    border: 5px solid #9f194a;
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* css target HTML Table caption tag */
+
+caption {
+    color: white;
+    font-size: 25px;
+}
+
+/* css target HTML Table thead tag */
+ 
+ thead {
+     background-color: white;
+ }
+ 
+/* css target HTML Table tfoot tag */
+ 
+ tfoot {
+     background-color: white;
+ }
+ 
+/* Add a pseudo-class selector (page 320) */
+/* For example --  :nth-child(even)       */
+ 
+tr:nth-child(even) {
+    background-color: #cf556c;
+}
+ 
+/* use colgroup */
+
+.tableStyleAgain > colgroup > .one {
+    background-color: #b12a5b;
+}
+colgroup > .one, .two, .three, .four {
+    background-color: #ffb1ac;
+}
+
+/* Week 3, Wednesday Video Lesson Chapter 8 folder - Table Column Group, page 173 */
