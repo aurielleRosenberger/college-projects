@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!---Student Name: Auri Rosenberger
+     Date: 08, April 2021 -->
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="keywords" content="contact, form, email">
+   <meta name="author" content="Student Name">
+   <meta name="description" content="Basic Contact Form layout demonstration HTML syntax">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>Contact Form Example</title>
+   </head>
+<body>
+    <form action="mailto:aurirosenberger@my.cwi.edu?subject=PersonalPortfolioMail" enctype="text/plain" method="POST">
+		<label for="company">Company:</label><br> 
+		<input type="text" name="compName" size="50" id="company"><br>
+		
+		<label for="contact">Person to contact:</label><br>
+		<input type="text" name="contactName" size="30" id="contact"><br><br>
+		
+		<label for="comment">Enter your comments:</label><br>
+		<textarea id="comment" name="comment" cols="100" rows="10"></textarea><br><br>
+		
+		<input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+  </body>
+</html>
