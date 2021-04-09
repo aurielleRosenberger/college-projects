@@ -1,0 +1,64 @@
+
+/* Auri Rosenberger | 09, April 2021 | Assessment, Project 3 Durango Jewelry */
+
+@font-face {
+	font-family: 'alex-brush';
+	src: url('../fonts/alexbrush-regular-webfont.woff') format('woff'), 
+	url('../fonts/alexbrush-regular-webfont.woff2') format('woff2');
+}
+	 
+#outerwrapper {
+	border-radius: 15%;
+	background: rgba(245, 216, 189, 0.4);
+	width: 70%;
+	margin: auto;
+	align-items: center;
+}
+
+body {
+	margin-bottom: 30px;
+	background-image: url(../images/jewelry.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+ .addrightmargin {
+	float: left;
+	border-radius: 100%;
+	margin-right: 10%;
+}
+
+nav {
+	font-size: 1.5em;
+	clear: left;
+}
+
+nav > ul {
+	list-style-type: none;
+}
+
+h1 {
+	font-family: 'Pacifico', cursive, Arial;
+	font-size: 4em;
+}
+
+h2 {
+	font-family: 'alex-brush', Helvetica, sans-serif;
+	font-size: 2em;
+}
+
+main {
+	background: linear-gradient(#FFFFFF, #F0F9E6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+	font-size: 1em;
+	text-align: center;
+	padding: 10px;
+}
