@@ -1,0 +1,31 @@
+
+/* Auri Rosenberger | 10-15, April 2021 */
+
+table {
+    padding-top: 5px;
+    width: 50%;
+    font-size: small;
+}
+
+table td, th {
+    border: 1px solid black;
+    padding-left: 3px;
+    padding-right: 10px;
+}
+
+caption {
+    padding-top: 20px;
+    font-style: italic;
+}
+
+thead {
+
+}
+
+tbody {
+
+}
+
+tfoot {
+
+}
