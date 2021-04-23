@@ -1,0 +1,99 @@
+/* Auri Rosenberger | 23, April 2021 */
+
+body {
+	background-color: #F5F5F5;
+    color: #3F2860;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header { 
+	background-color: #9BC1C2; 
+    background-image: url(../images/lilyheader.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+h1 { 
+	text-indent: 1em;
+    line-height: 400%; 
+}
+
+#doorRight {
+	float: right;
+	margin-top: -1.2%;
+}
+
+main > ul {
+	list-style-image: url(../images/yogabullet.png);
+	margin-left: 3em;
+}
+
+nav { 
+     font-weight: bold;
+}
+
+nav ul {
+	list-style-type: none;
+	display: inline-flex;
+	margin: 0%;
+	padding: 0%;
+}
+
+.schedule {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+	margin-bottom: .5em;
+}
+
+td {
+	border: 1px solid black;
+	text-align: center;
+}
+
+footer { 
+	background-color: #9BC1C2; 
+    font-size: small;
+	text-align: center;
+	font-style: italic;
+	padding: .5em;
+}
+
+address {
+	margin-bottom: .5em;
+}
+
+/*************************** Tablet ***************************/	
+@media screen and (min-width:643px) {
+	img {
+		display: block;
+		width: 90%;
+		height: auto;
+	}
+
+	body {
+		background-color: #F5F5F5;
+	}
+}
+
+/*************************** Mobile ***************************/
+@media only screen and (max-width: 642px) {
+	img {
+		display: none;
+	}
+
+	header {
+		background-image: none;
+	}
+
+	nav ul {
+		display: block;
+	}
+
+	body {
+		background-image: url(../images/yogamobile.png);
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
