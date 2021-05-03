@@ -1,0 +1,33 @@
+body {
+  background: lightblue;
+  text-align: left;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@keyframes img {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  45% {
+    transform: translate3d(1200px, 0px, 0px);
+  }
+
+  70% {
+    transform: translate3d(1200px, 0px, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+img {
+  animation: img 7s 1;
+  animation-timing-function: ease-in-out;
+}
