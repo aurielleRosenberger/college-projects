@@ -1,0 +1,64 @@
+/* Auri Rosenberger | 04-12, May 2021 */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body, nav, main, footer {
+    font-family: 'Lora', serif;
+}
+
+.transparentNavigation {
+    background-color: rgba(255, 255, 255, 0.707);
+}
+
+.daisySpace {
+    margin-top: 3rem;
+    padding: 2em;
+}
+
+.coverImage {
+    background-image: url(../images/saint-bernard-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 45rem;
+    top: 20%;
+    margin: auto;
+    padding: 2em;
+}
+
+.fadedBlue {
+    background-color: rgb(126, 142, 167);
+}
+
+.fadedBlueText {
+    color: rgb(105, 130, 171);
+}
+
+.hillsideGreen {
+    background-color: rgb(134, 142, 64);
+}
+
+.lighterHillside {
+    background-color: rgb(189, 198, 114);
+}
+
+.captionCarousel {
+    background: rgba(255, 255, 255, 0.231);
+    font-size: small;
+    font-style: italic;
+    font-weight: 600;
+    position: relative;
+    padding: 1rem;
+}
+
+.captionCarousel > h1, .captionCarousel > p {
+    color: black;
+}
+
+.nickToss {
+    color: white;
+}
+
+.bi::before{
+    color: white;
+  }
