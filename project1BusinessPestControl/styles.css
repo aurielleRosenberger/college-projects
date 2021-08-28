@@ -1,0 +1,31 @@
+/* *******************************************************************
+***
+*Original Author: Auri Rosennberger
+*Date Created: 26, August 2021
+*Version: 1
+*Date Last Modified: 27, August 2021
+*Modified by: Auri Rosennberger
+*Modification log:
+
+- 08/27/2021 - Added background image with gradient, source (Sayeed Ahmad): https://dribbble.com/shots/15938812-Pest-Control-Icon-Set#
+             - Added distressed customer making phonecall icon: https://thenounproject.com/term/distress-phone-call/2767326/
+             - Added house icon: https://www.kindpng.com/imgv/hwxxwTm_computer-icons-building-architectural-engineering-house-house-icon/
+             - Added exterminator spraying insecticide icon: https://www.pngitem.com/middle/hxiwwim_15-control-vector-pest-for-free-download-on/
+             - Added colors to Bootstrap cards
+***
+******************************************************************** */
+
+#bugsIconBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.631)), url(images/iconSetPestControl.jpg);
+    background-size: 360px;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.bugOrange {
+    background-color: rgb(241,124,8);
+}
+
+.bugGreen {
+    background-color: rgb(23,184,108);
+}
