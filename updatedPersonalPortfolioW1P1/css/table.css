@@ -1,0 +1,59 @@
+
+/* *******************************************************************
+***
+*Original Author: Auri Rosenberger
+*Date Created: (10-15, April 2021)
+*Version: 1
+*Date Last Modified: 01, October 2021
+*Modified by: Auri Rosenberger
+*Modification log:
+
+- 10/01/2021 - Scrapped old table to use Trachyon's table feature, content is the same and consistent
+             - Color scheme has changed, some other aspects tweaked
+***
+******************************************************************** */
+
+table {
+    padding-top: 5px;
+    /* width: 50%; */
+}
+
+.baskerville {
+    font-family: baskerville, serif;
+}
+
+table td {
+    /* border: 1px solid black; */
+    padding-left: 4px;
+    /* padding-right: 10px; */
+    background-color: rgba(255, 255, 255, 0.186);
+    text-shadow: 1px 1px blanchedalmond;
+}
+
+caption {
+    padding-top: 15px;
+    font-style: italic;
+    color: black;
+    text-shadow: 1px 1px blanchedalmond;
+    font-weight: bold;
+}
+
+.completeOrCurrent {
+    /* background-color: #e1c6176b; */
+    background-color: #ffe59d5f;
+}
+
+thead, th {
+    /* background-color: #fd87997c; */
+    background-color: #1f313859;
+    color: blanchedalmond;
+    text-shadow: 1px 1px black;
+}
+
+.secondHeader {
+    background-color: white;
+}
+
+tbody {
+    margin: auto;
+}
