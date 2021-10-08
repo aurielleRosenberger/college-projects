@@ -1,0 +1,70 @@
+/* *******************************************************************
+***
+*Original Author: Auri Rosenberger
+*Date Created: 07, October 2021
+*Version: 1
+*Date Last Modified: 07, October 2021
+*Modified by: Auri Rosenberger
+*Modification log:
+
+- 10/07/2021 - Citrus fruits image: https://assets.epicurious.com/photos/5e347263ede52e00086179b3/16:9/w_2560%2Cc_limit/CitrusGuide_HERO_012920_164-jd.jpg
+             - Mandarin orange image: https://www.israel21c.org/wp-content/uploads/2017/03/Jaffa-Orri-peeled-1168x657.jpg
+             - Lime image: https://cdn.shopify.com/s/files/1/0048/6110/0145/products/s174072524441932549_p5_i1_w1178_1200x1200.jpg?v=1621634170
+             - Lemon image: https://cdn.shopify.com/s/files/1/0206/9470/products/4621-done_1024x1024.jpg?v=1595196867
+             - Grapefruit image: https://www.olivethebest.ca/wp-content/uploads/2018/12/Grapefruit.jpg
+             - Kumquat image: https://chefsmandala.com/wp-content/uploads/2018/03/Cumquat.jpg
+             - Brought in Google Font 'Alegreya Sans SC', targeted as !important since there was some interference elsewhere, probably
+               the Bootstrap but not sure where
+             - 
+***
+******************************************************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap');
+
+body {
+    font-family: 'Alegreya Sans SC', sans-serif!important;
+}
+
+.parallax {
+    position: relative;
+    /* opacity: 0.65; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallaxCitrus {
+    background-image: url(../media/citrusBackground.jpg);
+    min-height: 500px;
+  }
+
+  .parallaxMO {
+    background-image: url(../media/mediaMO.jpg);
+    min-height: 500px;
+  }
+
+  .parallaxLime {
+    background-image: url(../media/mediaLime.jpg);
+    min-height: 500px;
+  }
+
+  .parallaxLemon {
+    background-image: url(../media/mediaLemon.jpg);
+    min-height: 500px;
+  }
+
+  .parallaxGrapefruit {
+    background-image: url(../media/mediaGrapefruit.jpg);
+    min-height: 500px;
+  }
+
+  .parallaxKumquat {
+    background-image: url(../media/mediaKumquat.jpg);
+    min-height: 500px;
+  }
+
+  .spacing {
+      text-align: center;
+      padding: 50px 80px;
+  }
