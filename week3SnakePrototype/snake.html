@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-------------------------------------------------------
+  ---
+#Original Author: Auri Rosenberger
+#Date Created: (01-28, November 2021)
+#Version: 1
+#Date Last Modified: 28, November 2021
+#Modified by: Auri Rosenberger
+#Modification log:
+- 11/28/2021 - Bootstrap 5 implemented
+             - Original plan to follow Ania Kubow's tutorial/walkthrough swapped to follow Chris DeLeon's version.
+             - Chris DeLeon's version: https://www.youtube.com/watch?v=xGmXxpIj6vs&ab_channel=ChrisDeLeonofHomeTeamGameDev
+             - Navigation choice on whether or not to implement was negated.
+             - Start/restart button(s) and score counter removed.
+             - Removed JavaScript file to include script in HTML
+             - 
+---
+------------------------------------------------------->
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="Modified and remodeled version of Nokia 3310 Snake game. Use the arrow keys on your keyboard to begin!">
+        <meta name="keywords" content="Nokia 3310 Snake, game, Katie Tan, Chris DeLeon">
+        <meta name="author" content="Auri/Aurielle Rosenberger">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="media/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="media/android-chrome-192x192.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+        <title>Nokia 3310 Snake Remodeled</title>
+      </head>
+      <body>
+          <header class="dimmed-backdrop fixed-top text-center"><b>Nokia 3310 Snake Remodeled</b>
+              <br>Use the arrow keys on your keyboard to begin! Grow your snake!
+          </header>
+
+          <!-- Main -->
+          <main>
+
+<canvas id="gc" width="400" height="400"></canvas>
+<script>
+window.onload = function() {
+    canv = document.getElementById("gc");
+    ctx = canv.getContext("2d");
+    document.addEventListener("keydown", keyPush);
+    setInterval(game, 1000/15);
+}
+px = py = 10;
+gs = tc = 20;
+ax = ay = 15;
+xv = yv = 0;
+trail = [];
+tail = 5;
+function game() {
+    px+=xv;
+    py+=yv;
+    if(px < 0) {
+        px = tc -1;
+    }
+    if(px > tc -1) {
+        px = 0;
+    }
+    if(py<0) {
+        py = tc -1;
+    }
+    if(py > tc -1) {
+        py = 0;
+    }
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, canv.width, canv.height);
+ 
+    ctx.fillStyle = "limegreen";
+    for(var i = 0; i < trail.length; i++) {
+        ctx.fillRect(trail[i].x * gs, trail[i].y * gs, gs -2, gs -2);
+        if(trail[i].x == px && trail[i].y == py) {
+            tail = 5;
+        }
+    }
+    trail.push({x:px, y:py});
+    while(trail.length > tail) {
+    trail.shift();
+    }
+ 
+    if(ax == px && ay == py) {
+        tail++;
+        ax=Math.floor(Math.random() * tc);
+        ay=Math.floor(Math.random() * tc);
+    }
+    ctx.fillStyle="rgb(255, 24, 101)";
+    ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
+}
+function keyPush(evt) {
+    switch(evt.keyCode) {
+        case 37:
+            xv = -1; yv = 0;
+            break;
+        case 38:
+            xv = 0; yv = -1;
+            break;
+        case 39:
+            xv = 1; yv = 0;
+            break;
+        case 40:
+            xv = 0; yv = 1;
+            break;
+    }
+}
+</script>
+
+</main>
+
+<footer class="fixed-bottom dimmed-backdrop text-center">
+    <p>&copy; Copyright 2021. | All Rights Reserved. | Auri Rosenberger. | Chris DeLeon. | Katie Tan.</p>
+</footer>
+</body>
+</html>

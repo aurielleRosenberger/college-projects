@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+* {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: gold;
+  }
+
+  main {
+      padding-top: 125px;
+      text-align: center;
+  }
+
+  body {
+    background-image: url(../media/katieSnakeBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.dimmed-backdrop {
+    background-color: rgba(0, 0, 0, 0.508);
+}
+
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    padding-top: 10px;
+}
