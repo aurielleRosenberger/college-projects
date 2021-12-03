@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" id="groceryBackground">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Final Exam | Coding Challenge - Write This Code! | Week 5 | 24, September 2021">
+    <meta name="author" content="Auri/Aurielle Rosenberger">
+    <title>Your Discounted Grocery List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Need groceries? Remember to pick them up before discounts end!</h1>
+        <div id="groceries">
+            <label for="grocery_list">Grocery List</label><br>
+            <textarea id="grocery_list" rows="6" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="item">Grocery Item:</label><br>
+            <input type="text" name="item" id="item">
+        </div>
+        <div>
+            <label for="due_date">Date Before Discount Ends:</label><br>
+            <input type="text" name="due_date" id="due_date">
+        </div>
+        <div>
+            <input type="button" id="add_item" value="Add Item"><br>
+            <input type="button" id="clear_groceries" value="Clear Grocery Item"><br>
+            <input type="button" id="filter" value="Filter">
+        </div>
+    </main>    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

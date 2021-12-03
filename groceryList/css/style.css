@@ -1,0 +1,42 @@
+/* Grocery background image: https://wallpaperaccess.com/full/1624848.jpg */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.768);
+    width: auto;
+    margin: 250px;
+    padding: 0 2em 1em;
+}
+
+
+h1 {
+    font-size: 150%;
+    font-weight: bolder;
+    color: rgb(214, 52, 52);
+    margin-bottom: .5em;
+    padding-top: 15px;
+}
+
+div {
+    margin-bottom: 1em;
+}
+
+input {
+    width: 22em;
+    margin-bottom: .5em;
+}
+
+#groceries {
+    margin-top: 0;
+    float: right; 
+    width: 24em;
+    min-height: 5em;
+}
+
+#groceryBackground {
+    background-image: url(../images/groceryBackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
